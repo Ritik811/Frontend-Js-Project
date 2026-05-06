@@ -1,4 +1,5 @@
 import { getCartProductFromLSd } from "./getCardProduct.js";
+import { updateCartProductTotal } from "./updateCartProductTotal.js";
 import { updateCartValue } from "./updateCartValue.js";
 
 export const removeProdFromCart = (id) => {
@@ -13,4 +14,5 @@ export const removeProdFromCart = (id) => {
   }
 
   updateCartValue(cartProduct.length);
+  updateCartProductTotal();
 };
